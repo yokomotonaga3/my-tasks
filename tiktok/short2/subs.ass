@@ -1,0 +1,40 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Cap,Rounded Mplus 1c,48,&H00FFFFFF,&H00FFFFFF,&H00201010,&H64000000,1,0,0,0,100,100,1,0,1,5,2,2,60,60,285,1
+Style: Pop,Noto Sans JP,96,&H00A04FFF,&H00FFFFFF,&H00FFFFFF,&H50000000,1,0,0,0,100,100,2,0,1,7,4,5,20,20,0,1
+Style: HookS,Rounded Mplus 1c,40,&H00FFFFFF,&H00FFFFFF,&H00A04FFF,&H00A04FFF,1,0,0,0,100,100,2,0,3,10,0,5,20,20,0,1
+Style: HookB,Noto Sans JP,86,&H00FFFFFF,&H00FFFFFF,&H00A04FFF,&H60000000,1,0,0,0,100,100,2,0,1,8,5,5,20,20,0,1
+Style: End,Noto Sans JP,78,&H00FFFFFF,&H00FFFFFF,&H00A04FFF,&H60000000,1,0,0,0,100,100,2,0,1,7,4,5,20,20,0,1
+Style: EndS,Rounded Mplus 1c,40,&H00FFFFFF,&H00FFFFFF,&H00201010,&H00000000,1,0,0,0,100,100,1,0,1,4,0,5,20,20,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 1,0:00:00.30,0:00:02.15,Cap,,0,0,0,,{\fad(40,40)}YouTubeのホスト動画見て
+Dialogue: 1,0:00:02.15,0:00:03.45,Cap,,0,0,0,,{\fad(40,40)}{\c&H00A04FFF&}爆笑{\c&H00FFFFFF&}してる子
+Dialogue: 1,0:00:03.55,0:00:04.95,Cap,,0,0,0,,{\fad(40,40)}{\c&H00A04FFF&}稼ぐ側{\c&H00FFFFFF&}に\Nなりませんか？
+Dialogue: 1,0:00:04.98,0:00:07.30,Cap,,0,0,0,,{\fad(40,40)}画面の向こうで\N楽しむだけじゃなくて
+Dialogue: 1,0:00:07.38,0:00:08.80,Cap,,0,0,0,,{\fad(40,40)}今度は あなたが
+Dialogue: 1,0:00:08.80,0:00:10.90,Cap,,0,0,0,,{\fad(40,40)}{\c&H00A04FFF&}稼ぐ側{\c&H00FFFFFF&}で\N最高に{\c&H004DE1FF&}チヤホヤ{\c&H00FFFFFF&}されて
+Dialogue: 1,0:00:10.95,0:00:13.08,Cap,,0,0,0,,{\fad(40,40)}{\c&H004DE1FF&}ガッツリ{\c&H00FFFFFF&}稼ぐ\N{\c&H00A04FFF&}主人公{\c&H00FFFFFF&}になれませんか？
+Dialogue: 1,0:00:13.12,0:00:15.55,Cap,,0,0,0,,{\fad(40,40)}{\c&H00A04FFF&}見る側{\c&H00FFFFFF&}から\N{\c&H00A04FFF&}稼ぐ側{\c&H00FFFFFF&}に回れば
+Dialogue: 1,0:00:15.58,0:00:17.62,Cap,,0,0,0,,{\fad(40,40)}欲しかったものが\N{\c&H004DE1FF&}ガッツリ{\c&H00FFFFFF&}買えたり
+Dialogue: 1,0:00:17.66,0:00:19.82,Cap,,0,0,0,,{\fad(40,40)}欲しかったブランドや\N{\c&H00A04FFF&}推し活{\c&H00FFFFFF&}も
+Dialogue: 1,0:00:19.86,0:00:21.92,Cap,,0,0,0,,{\fad(40,40)}{\c&H004DE1FF&}全部自分の力で{\c&H00FFFFFF&}\N叶えられます
+Dialogue: 1,0:00:21.98,0:00:23.42,Cap,,0,0,0,,{\fad(40,40)}{\c&H00A04FFF&}見る専{\c&H00FFFFFF&}を {\c&H00A04FFF&}卒業{\c&H00FFFFFF&}して
+Dialogue: 1,0:00:23.48,0:00:25.76,Cap,,0,0,0,,{\fad(40,40)}自分史上\N{\c&H00A04FFF&}一番輝く{\c&H00FFFFFF&}スタート
+Dialogue: 1,0:00:25.80,0:00:27.27,Cap,,0,0,0,,{\fad(40,40)}{\c&H004DE1FF&}僕がサポートします{\c&H00FFFFFF&}
+Dialogue: 2,0:00:03.62,0:00:04.87,Pop,,0,0,0,,{\pos(360,745)\fs96\1c&H00A04FFF&\3c&HFFFFFF&}{\fad(60,200)\fscx40\fscy40\t(0,110,\fscx118\fscy118)\t(110,220,\fscx100\fscy100)}稼ぐ側に
+Dialogue: 2,0:00:11.75,0:00:13.00,Pop,,0,0,0,,{\pos(360,745)\fs96\1c&H00A04FFF&\3c&HFFFFFF&}{\fad(60,200)\fscx40\fscy40\t(0,110,\fscx118\fscy118)\t(110,220,\fscx100\fscy100)}主人公に
+Dialogue: 2,0:00:19.90,0:00:21.15,Pop,,0,0,0,,{\pos(360,745)\fs74\1c&H00A04FFF&\3c&HFFFFFF&}{\fad(60,200)\fscx40\fscy40\t(0,110,\fscx118\fscy118)\t(110,220,\fscx100\fscy100)}全部自分の力で
+Dialogue: 2,0:00:24.20,0:00:25.45,Pop,,0,0,0,,{\pos(360,745)\fs96\1c&H00A04FFF&\3c&HFFFFFF&}{\fad(60,200)\fscx40\fscy40\t(0,110,\fscx118\fscy118)\t(110,220,\fscx100\fscy100)}一番輝く
+Dialogue: 3,0:00:00.00,0:00:02.10,HookS,,0,0,0,,{\pos(360,150)\fad(0,150)} “見る専”の女の子へ 
+Dialogue: 3,0:00:00.00,0:00:02.10,HookB,,0,0,0,,{\pos(360,275)\fad(0,150)}推し活のお金\N{\c&H00A04FFF&}{\3c&HFFFFFF&}自分で稼げたら？
+Dialogue: 3,0:00:27.27,0:00:29.07,End,,0,0,0,,{\pos(360,560)\fad(150,0)}気になったら\N{\c&H00A04FFF&}{\3c&HFFFFFF&}DMまってます
+Dialogue: 3,0:00:27.52,0:00:29.07,EndS,,0,0,0,,{\pos(360,740)\fad(150,0)}話を聞くだけでもOK
