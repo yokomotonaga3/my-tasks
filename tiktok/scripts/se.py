@@ -24,9 +24,9 @@ def pikon():  # ひらめき「ピコーン！」: whoosh up + two-note bell + s
     glide=np.sin(2*np.pi*np.cumsum(np.geomspace(500,1500,n))/sr)
     place(b,glide*0.18*np.sin(np.pi*t/t[-1])**2,0.0)
     place(b,tone(1567.98,1.2,0.002,0.10)*0.55,0.17)   # G6 「ピ」
-    place(b,tone(2093.0,1.4,0.002,0.45)*0.65,0.255)   # C7 「コーン」
+    place(b,tone(2093.0,1.0,0.002,0.28)*0.65,0.255)   # C7 「コーン」
     place(b,tone(3135.96,1.0,0.002,0.25)*0.18,0.255)
-    place(b,sparkle(0.6,12,4000,10000,0.0)*0.5,0.28)
+    place(b,sparkle(0.4,6,4000,9000,0.0)*0.3,0.28)
     return stereo(b,0.6)
 def kira():  # 軽い「キラッ」: quick upward 3-note arpeggio + sparkle
     L=int(1.0*sr); b=np.zeros(L)
@@ -38,11 +38,11 @@ def norm(x,peak): return x/np.abs(x).max()*peak
 def save(p,x):
     w=wave.open(p,'wb'); w.setnchannels(2); w.setsampwidth(2); w.setframerate(sr)
     w.writeframes((np.clip(x,-1,1)*32767).astype(np.int16).tobytes())
-P=norm(pikon(),0.5); K=norm(kira(),0.32)
+P=norm(pikon(),0.3); K=norm(kira(),0.32)
 save('se_pikon.wav',P); save('se_kira.wav',K)
 dur=23.75; tr=np.zeros((int(dur*sr)+sr,2))
 big=[2.44,8.50,16.96,20.16,22.45]
-small=[0.05,1.51,3.71,5.76,6.61,7.24,8.92,11.04,11.93,13.14,13.90,14.90,18.77]
+small=[]
 lead=0.17  # pikon's bell hits 0.17s after its start -> align bell to caption change
 for t in big: place(tr[:,0],P[:,0],max(0,t-lead)); place(tr[:,1],P[:,1],max(0,t-lead))
 for t in small: place(tr[:,0],K[:,0],t); place(tr[:,1],K[:,1],t)
